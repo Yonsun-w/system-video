@@ -1,0 +1,58 @@
+html, body{
+	font-size: 100%;
+	background:#ffffff;
+	margin: 0;
+	height: 100%;
+}
+.reg_containersign{
+	height:100%;
+	background:url(../img/backgroundbox.jpg) no-repeat 50% 50%;
+	background-size:cover;
+}
+.agileits_signin_form .help-block{
+	text-align:right;
+	color:#5c8cff;
+}
+.dialog_sign{
+	background:#fff;
+	padding: 2em;
+	max-width: 500px;
+	margin: 0px auto;
+	text-align:center;
+	margin-top: 24vh;
+}
+
+.dialog_sign .form-control{
+	height:auto;
+}
+.dialog_sign .btn-primary{
+	background-color:#5c8cff;
+	border-color:#5c8cff;
+}
+.agileits_signin_form input{
+	padding:10px
+}
+.container-fluid .navbar{
+	font-size: 14px;
+	line-height:40px;
+	min-height:40px;
+	color:#fff;
+}
+
+@media all and (max-width:568px){
+	.dialog_sign{
+		max-width: 425px;
+	}
+}
+
+@media all and (max-width:480px){
+
+	.dialog_sign{
+		max-width: 445px;
+	}
+}
+@media all and (max-width:414px){
+	.dialog_sign {
+		padding: 1.5em;
+	}
+}
