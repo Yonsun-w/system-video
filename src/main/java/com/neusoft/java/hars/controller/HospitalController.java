@@ -54,7 +54,7 @@ public class HospitalController {
 		Page<Hospital> page = hospitalService.getPage(searchParams,pageNumber, pageSize, sortType);
 		model.addAttribute("list", page);
 		model.addAttribute("searchParams", Servlets.encodeParameterStringWithPrefix(searchParams, "search_"));
-		return "hospital/list";
+		return "hospital/mylist";
 	}
 
 
@@ -81,7 +81,7 @@ public class HospitalController {
 		list.add(v2);
 		list.add(v3);
 		model.addAttribute("list", list);
-		return "hospital/mylist";
+		return "hospital/newlist";
 	}
 
 

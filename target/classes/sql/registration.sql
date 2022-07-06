@@ -35,11 +35,11 @@ CREATE TABLE IF NOT EXISTS `t_appointment` (
 # Dumping data for table hars.t_appointment: ~5 rows (approximately)
 /*!40000 ALTER TABLE `t_appointment` DISABLE KEYS */;
 INSERT INTO `t_appointment` (`id`, `appt_num`, `visit_id`, `doc_id`, `user_id`, `fee`, `status`) VALUES
-	(1, '000001', 1, 1, 1, 14.40, 1),
-	(2, '000002', 2, 6, 1, 19.20, 1),
-	(3, '015731', 4, 1, 1, 14.40, 1),
-	(4, '190642', 4, 1, 2, 14.40, 1),
-	(5, '851690', 3, 1, 2, 14.40, 1);
+	(1, '000001', 1, 1, 1, 5000.00, 1),
+	(2, '000002', 2, 6, 1, 5000.00, 1),
+	(3, '015731', 4, 1, 1, 6000.00, 1),
+	(4, '190642', 4, 1, 2, 50.00, 1),
+	(5, '851690', 3, 1, 2, 20.00, 1);
 /*!40000 ALTER TABLE `t_appointment` ENABLE KEYS */;
 
 
@@ -60,11 +60,11 @@ CREATE TABLE IF NOT EXISTS `t_department` (
 # Dumping data for table hars.t_department: ~5 rows (approximately)
 /*!40000 ALTER TABLE `t_department` DISABLE KEYS */;
 INSERT INTO `t_department` (`id`, `code`, `hospital_code`, `name`, `brief`) VALUES
-	(1, '0001', '21020303\r\n', '呼吸科', '备注'),
-	(2, '0002', '21020303\r\n', '消化科', '备注'),
-	(3, '0003', '21020303\r\n', '内分泌科', NULL),
-	(4, '0004', '21020303\r\n', '心血管科', NULL),
-	(5, '0005', '21020303\r\n', '骨外科', NULL);
+	(1, '0001', '21020303\r\n', '梦想家', '备注'),
+	(2, '0002', '21020303\r\n', '梦想家影楼', '备注'),
+	(3, '0003', '21020303\r\n', '金夫人', NULL),
+	(4, '0004', '21020303\r\n', '梦田', NULL),
+	(5, '0005', '21020303\r\n', '早美人', NULL);
 /*!40000 ALTER TABLE `t_department` ENABLE KEYS */;
 
 
@@ -85,13 +85,13 @@ CREATE TABLE IF NOT EXISTS `t_doctor` (
 # Dumping data for table hars.t_doctor: ~7 rows (approximately)
 /*!40000 ALTER TABLE `t_doctor` DISABLE KEYS */;
 INSERT INTO `t_doctor` (`id`, `dept_code`, `name`, `title`, `fee`, `brief`) VALUES
-	(1, '0001', '马医生', '副主任', 14.40, '备注'),
-	(2, '0001', '何医生', '副主任', 14.40, '备注'),
-	(3, '0001', '李医生', '主治医师', 9.60, NULL),
-	(4, '0002', '梁医生', '副主任', 14.40, NULL),
-	(5, '0002', '唐医生', '主任', 19.20, NULL),
-	(6, '0003', '王浩', '主任', 19.20, NULL),
-	(7, '0003', '张医生', '主治医师', 9.60, NULL);
+	(1, '0001', '马Tony', '签约摄影达人', 14.40, '备注'),
+	(2, '0001', '文三三', '签约摄影达人', 14.40, '备注'),
+	(3, '0001', '马二二', '签约摄影达人', 9.60, NULL),
+	(4, '0002', '王mike', '签约摄影达人', 14.40, NULL),
+	(5, '0002', '大大怪', '签约摄影达人', 19.20, NULL),
+	(6, '0003', '哈哈刘', '驻场摄影师', 19.20, NULL),
+	(7, '0003', '张无忌', '驻场摄影师', 9.60, NULL);
 /*!40000 ALTER TABLE `t_doctor` ENABLE KEYS */;
 
 
@@ -111,10 +111,8 @@ CREATE TABLE IF NOT EXISTS `t_hospital` (
 # Dumping data for table hars.t_hospital: ~4 rows (approximately)
 /*!40000 ALTER TABLE `t_hospital` DISABLE KEYS */;
 INSERT INTO `t_hospital` (`id`, `code`, `name`, `level`, `address`, `brief`) VALUES
-	(1, '21020201', '大连大学附属中山医院', 3, '辽宁省大连市中山区解放街6号  116001', '创建于1907年，2005年正式归属大连大学，更名为大连大学附属中山医院。医院是一所集预防、医疗、教学、科研、康复为一体的综合性大学附属医院。'),
-	(2, '21020303\r\n', '大连医科大学附属第一医院\r\n21020303	大连医科大学附属第一医院\r\n', 3, '辽宁省大连市西岗区中山路222号  116011', '始建于1930年，是一所集医疗、教学、科研为一体的综合性三级医院，是大连市医保定点医院。'),
-	(3, '21020405', '大连医科大学附属第二医院', 3, '大连市沙河口区中山路467号 116023', '始建于1958年，是一所集医疗、教学、科研于一体的综合性三级医院，是大连市医保定点医院。'),
-	(4, '1008', '测试医院', 0, NULL, NULL);
+                                                                                 (1, '12212', '金夫人摄影', 3, '北京中关村壹号 116023', '签约艺人：抖音代古拉K。'),
+                                                                                 (2, '12212', '梦想家摄影', 3, '北京中关村壹号 116023', '创建于2022年，为刘亦菲黄晓明等明星服务。');
 /*!40000 ALTER TABLE `t_hospital` ENABLE KEYS */;
 
 

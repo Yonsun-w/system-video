@@ -24,18 +24,21 @@
                     <table class="table table-hover table-border-bottom">
                         <thead>
                         <tr>
-                            <th>摄影师机构</th>
-                            <th>家庭地址</th>
-                            <th>修改资料</th>
+                            <th>客户账号名</th>
+                            <th>摄影师名</th>
+                            <th>预约主题</th>
+                            <th>是否完成</th>
                         </tr>
                         </thead>
                         <tbody>
-                        <c:forEach items="${list.content}" var="list" varStatus="status">
+                        <c:forEach items="${list}" var="cont" varStatus="status">
                             <tr>
-                                <td><a href="${ctx }/web/hospital/show/${list.id}">${list.name}</a></td>
-                                <td>${list.address}</td>
-                                <td><a href="${ctx }/web/hospital/input/${list.id}">修改</a>
-                                    <a href="${ctx }/web/hospital/del/${list.id}">删除</a>
+                                <td><a href=>${cont.user}</a></td>
+                                <td><a href=>${cont.video}</a></td>
+                                <td><a href=>${cont.name}</a></td>
+                                <td><a href=>${cont.isdone}</a></td>
+                                <td><a href=" ">修改</a>
+                                    <a href="">删除</a>
                                 </td>
                             </tr>
                         </c:forEach>

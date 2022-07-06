@@ -112,7 +112,7 @@ CREATE TABLE IF NOT EXISTS `t_hospital` (
 /*!40000 ALTER TABLE `t_hospital` DISABLE KEYS */;
 INSERT INTO `t_hospital` (`id`, `code`, `name`, `level`, `address`, `brief`) VALUES
                                                                                  (1, '12212', '金夫人摄影', 3, '北京中关村壹号 116023', '签约艺人：抖音代古拉K。'),
-                                                                                 (2, '12212', '梦想家摄影', 3, '北京中关村壹号 116023', '创建于2022年，为刘亦菲黄晓明等明星服务。')；
+                                                                                 (2, '12212', '梦想家摄影', 3, '北京中关村壹号 116023', '创建于2022年，为刘亦菲黄晓明等明星服务。');
 /*!40000 ALTER TABLE `t_hospital` ENABLE KEYS */;
 
 
